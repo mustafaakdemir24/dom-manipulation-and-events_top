@@ -6,4 +6,4 @@ content.textContent = "This is the glorious text content";
 
 container.appendChild(content);
 
-// Timing of JavaScript --> The Odin Project
+// Exercise --> The Odin Project
