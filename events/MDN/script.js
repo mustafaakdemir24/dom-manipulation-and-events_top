@@ -8,4 +8,4 @@ btn.addEventListener("mouseout", () => {
   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
   document.body.style.backgroundColor = rndCol;
 });
-// MDN -- Events -- Removing listeners
+// MDN -- Events -- Event objects
