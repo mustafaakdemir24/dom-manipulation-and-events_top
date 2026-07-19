@@ -4,8 +4,11 @@ const random = (number) => {
   return Math.floor(Math.random() * (number + 1));
 };
 
-btn.addEventListener("mouseout", () => {
+const bgChange = (e) => {
   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
-  document.body.style.backgroundColor = rndCol;
-});
-// MDN -- Events -- Event objects
+  e.target.style.backgroundColor = rndCol;
+  console.log(e);
+};
+
+btn.addEventListener("click", bgChange);
+// MDN -- Events -- Extra properties of event objects
