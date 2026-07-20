@@ -11,4 +11,11 @@ const bgChange = (e) => {
 };
 
 btn.addEventListener("click", bgChange);
+
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+textBox.addEventListener("keydown", (event) => {
+  output.textContent = `You pressed "${event.key}."`;
+});
+
 // MDN -- Events -- Extra properties of event objects
