@@ -21,8 +21,9 @@ let double = (n) => n * 2;
 const buttons = document.querySelectorAll("#btn");
 
 buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    alert(`${button.textContent} has been clicked!`);
+  button.addEventListener("click", (e) => {
+    // alert(`${button.textContent} has been clicked!`);
+    e.target.style.background = "blue";
   });
 });
 
@@ -42,4 +43,8 @@ btn1.addEventListener("click", alertFunction);
 btn1.addEventListener("click", function (e) {
   console.log(e);
 });
-// Understanding callbacks --> The Odin Project
+
+btn1.addEventListener("click", (e) => {
+  e.target.style.background = "blue";
+});
+// Attaching listeners to groups of nodes --> The Odin Project
