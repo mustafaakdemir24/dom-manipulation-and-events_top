@@ -47,4 +47,15 @@ btn1.addEventListener("click", function (e) {
 btn1.addEventListener("click", (e) => {
   e.target.style.background = "blue";
 });
-// Attaching listeners to groups of nodes --> The Odin Project
+// buttons is a node list. It looks and acts much like an array.
+const buttons1 = document.querySelectorAll("button");
+
+// we use the .forEach method to iterate through each button
+buttons1.forEach((button) => {
+  // and for each one we add a 'click' listener
+  button.addEventListener("click", () => {
+    alert(button.id);
+  });
+});
+
+// Assignment -- Mouse events - How do you remove an element from the DOM? -- The Odin Project
