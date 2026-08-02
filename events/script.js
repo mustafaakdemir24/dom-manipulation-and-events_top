@@ -58,4 +58,4 @@ buttons1.forEach((button) => {
   });
 });
 
-// Assignment -- Mouse events - How do you remove an element from the DOM? -- The Odin Project
+// Assignment -- Keyboard events - How do you remove an element from the DOM? -- The Odin Project
