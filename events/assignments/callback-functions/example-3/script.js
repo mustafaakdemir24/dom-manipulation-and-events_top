@@ -12,4 +12,20 @@ const text = document.createTextNode(
   " — the premier source for web development knowledge.",
 );
 const linkPara = document.querySelector("p");
+
+// Moving and removing elements
 linkPara.appendChild(text);
+
+sect.appendChild(linkPara);
+
+// sect.removeChild(linkPara);
+
+// linkPara.remove();
+
+// Manipulating styles
+// para.style.color = "white";
+// para.style.backgroundColor = "black";
+// para.style.padding = "10px";
+// para.style.width = "250px";
+// para.style.textAlign = "center";
+para.classList.add("highlight");
